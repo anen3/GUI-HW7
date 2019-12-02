@@ -1,0 +1,64 @@
+<!--Alex Nguyen-->
+<!--alex_nguyen@student.uml.edu-->
+<!--UMass Lowell COMP4610 GUI Programming I-->
+<!--Purpose of this webpage: Practicing js by implementing a dynamic table-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- bootstrap table, header, form from https://www.youtube.com/watch?v=0ik6X4DJKCc -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Multiplication Table</title>
+  <link href="CSS/style.css" rel="stylesheet">
+  
+</head>
+<body>
+
+<header id="header" class="bg-dark text-white p-4 mb-3">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6">
+        <h1 id="header-title">Multiplication Table</h1>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div id="main" class="card card-body">
+    <form id="addForm" class="form-inline mb-3">
+		<p>
+		<label for="item">X Value 1</label>
+		  <input type="text" class="form-control mr-2" id="item" name="item">
+		</p>
+		<p>
+		<label for="item2">X Value 2</label>
+		  <input type="text" class="form-control mr-2" id="item2" name="item2">
+		</p>
+		<p>
+		<label for="item3">Y Value 1</label>
+		  <input type="text" class="form-control mr-2" id="item3" name="item3">
+		</p>  
+		<p>
+		<label for="item4">Y Value 2</label>
+		  <input type="text" class="form-control mr-2" id="item4" name="item4">
+		</p>  
+		<p>
+		  <input type="submit" class="btn btn-dark" value="Submit">
+		</p>
+		  <p id= "invalid"></p>
+    </form>
+    <table id = "mult" class = "table table-bordered table-dark" >
+    </table>
+  </div>
+</div>
+<!-- cdn goes before local js
+ -->
+ 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script src="JS/jquery.validate.js"></script>
+ <script src= "additional-methods.js"></script>
+ <script src="JS/hw7.js"></script>
+
+ 
+</body>
+</html>

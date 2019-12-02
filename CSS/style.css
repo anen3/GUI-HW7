@@ -1,0 +1,24 @@
+/*Alex Nguyen
+alex_nguyen@student.uml.edu
+UMass Lowell COMP4610 GUI Programming I
+Purpose of this webpage: Practicing js by implementing a dynamic table*/
+
+
+#mult td:first-child
+{background-color: black !important;
+color: white !important;
+}
+
+#mult tr:first-child
+{background-color: black !important;
+color: white !important;
+}
+
+/* in js, made first row have id first, #first ~ selects all general siblings after first */
+/* alternating cell styling from https://stackoverflow.com/questions/18846271/css-how-to-target-a-specific-cell-inside-a-table */
+#mult  #first ~ tr:nth-child(odd)  td:nth-child(odd)
+{background-color: silver;
+}
+#mult  tr:nth-child(even)  td:nth-child(even)
+{background-color: silver;
+}
