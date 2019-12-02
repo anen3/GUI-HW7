@@ -141,7 +141,7 @@ function addItem(e){
 });
  */
 
-
+// jquery validation: make sure the user enters something in each field, and make sure the contents are numbers
 $(document).ready(function(){
   $("#addForm").validate({
 		rules: {
